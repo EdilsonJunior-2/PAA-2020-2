@@ -1,0 +1,11 @@
+1)
+	a- O algoritmo verifica se a matriz de entrada é simétrica ou não
+	b- Comparação entre 2 posições da matriz
+	c- O(n-1)^2, no pior caso
+
+2)
+	a- Complexidade: O(1), o código é linear
+	b- Complexidade: O(n-2), o código passa por um loop n-2 vezes
+
+3)
+	

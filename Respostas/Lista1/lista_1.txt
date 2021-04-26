@@ -1,0 +1,62 @@
+2)
+
+função impar (k) : inteiro
+	se k = 1
+	então retorne 1
+	senão se k = 2
+		então retorne 3
+		senão retorne impar(k-2) + 2*impar(k-1)
+
+----------------------------------------------------------------------
+
+3)
+
+caso base: n = 1;
+
+head(S) retorna <s1>
+
+tail(S) retorna vazio
+
+função reverter (S): string
+	inicio
+		primeiro := head(S) --retorna <s1>
+		cauda := tail(S) --retorna <s2, s3, ..., sn>
+		se (cauda = NULL)
+		então retorne primeiro --caso base
+		senão retorne reverter(cauda) + primeiro
+	fim
+
+-------------------------------------------------------------------------
+
+4)
+
+-------------------------------------------------------------------------
+
+5)
+
+caso base: n = 1;
+
+retorna X[n]
+
+
+Hipótese de indução: dado um vetor X com i elementos, com 1 <= i < K, eu consigo calcular o menor elemento de X
+
+função comparar(X, tamanho, atual, maior): inteiro
+	se tamanho = atual
+	então retorne maior
+	senão
+		se X[atual+1] > X[atual]
+		retorne comparar(X, tamanho, atual+1, X[atual+1])
+		senão retorne comparar(X, tamanho, atual+1, X[atual])
+
+função maior (X, n): inteiro
+	inicio
+		primeiro := X[1]
+		se n = 1
+		então retorne X[1] --caso base
+		senão retorne comparar(X, n, 1, maior)
+	fim	
+
+
+
+
