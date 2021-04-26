@@ -1,4 +1,3 @@
-
 def particao_reversa(a, ini, fim):
     pivo = a[fim - 1]
     print("pivo: ", pivo)
